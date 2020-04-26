@@ -85,6 +85,9 @@ class Galleries extends CI_Controller
             $insert = $this->Galleries_model->add(
                 array(
                     "title" => $this->input->post("title"),
+                    "titleEn" => $this->input->post("titleEn"),
+                    "titleFr" => $this->input->post("titleFr"),
+                    "titleDe" => $this->input->post("titleDe"),
                     "gallery_type" => $this->input->post("gallery_type"),
                     "url" => convertToSeo($this->input->post("title")),
                     "folder_name" => $folder_name,
@@ -186,6 +189,9 @@ class Galleries extends CI_Controller
                 ),
                 array(
                     "title" => $this->input->post("title"),
+                    "titleEn" => $this->input->post("titleEn"),
+                    "titleFr" => $this->input->post("titleFr"),
+                    "titleDe" => $this->input->post("titleDe"),
                     "folder_name" => $folder_name,
                     "url" => convertToSeo($this->input->post("title"))
                 )

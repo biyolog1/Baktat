@@ -86,7 +86,13 @@ class Courses extends CI_Controller
                 $insert = $this->Courses_model->add(
                     array(
                         "title" => $this->input->post("title"),
+                        "titleEn" => $this->input->post("titleEn"),
+                        "titleFr" => $this->input->post("titleFr"),
+                        "titleDe" => $this->input->post("titleDe"),
                         "description" => $this->input->post("description"),
+                        "descriptionEn" => $this->input->post("descriptionEn"),
+                        "descriptionFr" => $this->input->post("descriptionFr"),
+                        "descriptionDe" => $this->input->post("descriptionDe"),
                         "url" => convertToSeo($this->input->post("title")),
                         "img_url" => $uploaded_file,
                         "event_date" => $this->input->post("event_date"),
@@ -190,7 +196,13 @@ class Courses extends CI_Controller
                     $uploaded_file = $this->upload->data("file_name");
                     $data = array(
                         "title" => $this->input->post("title"),
+                        "titleEn" => $this->input->post("titleEn"),
+                        "titleFr" => $this->input->post("titleFr"),
+                        "titleDe" => $this->input->post("titleDe"),
                         "description" => $this->input->post("description"),
+                        "descriptionEn" => $this->input->post("descriptionEn"),
+                        "descriptionFr" => $this->input->post("descriptionFr"),
+                        "descriptionDe" => $this->input->post("descriptionDe"),
                         "event_date" => $this->input->post("event_date"),
                         "url" => convertToSeo($this->input->post("title")),
                         "img_url" => $uploaded_file,
@@ -211,7 +223,13 @@ class Courses extends CI_Controller
             } else {
                 $data = array(
                     "title" => $this->input->post("title"),
+                    "titleEn" => $this->input->post("titleEn"),
+                    "titleFr" => $this->input->post("titleFr"),
+                    "titleDe" => $this->input->post("titleDe"),
                     "description" => $this->input->post("description"),
+                    "descriptionEn" => $this->input->post("descriptionEn"),
+                    "descriptionFr" => $this->input->post("descriptionFr"),
+                    "descriptionDe" => $this->input->post("descriptionDe"),
                     "event_date" => $this->input->post("event_date"),
                     "url" => convertToSeo($this->input->post("title")),
                 );

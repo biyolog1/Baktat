@@ -19,6 +19,32 @@
                         <?php } ?>
                     </div>
                     <div class="form-group">
+                        <label>İngilizce Galeri Adı </label>
+                        <input class="form-control" placeholder="İngilizce Galeri Adını Giriniz" name="titleEn">
+                        <?php if (isset($form_error)) { ?>
+
+                            <small class="pull-right input-form-error"> <?php echo form_error("titleEn"); ?></small>
+                        <?php } ?>
+                    </div>
+                    <div class="form-group">
+                        <label>Fransızca Galeri Adı </label>
+                        <input class="form-control" placeholder="Fransızca Galeri Adını Giriniz" name="titleFr">
+                        <?php if (isset($form_error)) { ?>
+
+                            <small class="pull-right input-form-error"> <?php echo form_error("titleFr"); ?></small>
+                        <?php } ?>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Almanca Galeri Adı </label>
+                        <input class="form-control" placeholder="Almanca Galeri Adını Giriniz" name="titleDe">
+                        <?php if (isset($form_error)) { ?>
+
+                            <small class="pull-right input-form-error"> <?php echo form_error("titleDe"); ?></small>
+                        <?php } ?>
+                    </div>
+
+                    <div class="form-group">
                         <label>Galeri Türü</label>
                         <div>
                             <select class="form-control" name="gallery_type">
