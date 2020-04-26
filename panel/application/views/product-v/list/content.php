@@ -32,18 +32,11 @@ include "assets/barcode/vendor/autoload.php";
                 <th class="order"><i class="fa fa-reorder"></i></th>
                 <th class="w50">#id</th>
                 <th>Başlık</th>
-                <th>Başlık En</th>
-                <th>Başlık Fr</th>
-                <th>Başlık De</th>
                 <th>Url</th>
                 <th>Barkod</th>
                 <th>Açıklama</th>
-                <th>Açıklama En</th>
-                <th>Açıklama Fr</th>
-                <th>Açıklama De</th>
                 <th>Durumu</th>
                 <th>İşlem</th>
-
                 </thead>
                 <tbody class="sortable" data-url="<?php echo base_url("Product/rankSetter/") ?>">
 
@@ -53,9 +46,6 @@ include "assets/barcode/vendor/autoload.php";
                         <td class="order"><i class="fa fa-reorder"></i></td>
                         <td class="w50"><?php echo $item->id; ?></td>
                         <td><?php echo $item->title; ?></td>
-                        <td><?php echo $item->titleEn; ?></td>
-                        <td><?php echo $item->titleFr; ?></td>
-                        <td><?php echo $item->titleDe; ?></td>
                         <td><?php echo $item->url; ?></td>
                         <td>
                             <?php
@@ -77,9 +67,6 @@ include "assets/barcode/vendor/autoload.php";
 
                         </td>
                         <td><?php echo $item->description; ?></td>
-                        <td><?php echo $item->descriptionEn; ?></td>
-                        <td><?php echo $item->descriptionFr; ?></td>
-                        <td><?php echo $item->descriptionDe; ?></td>
                         <td class="w100">
                             <input
                                     data-url="<?php echo base_url("Product/isActiveSetter/$item->id"); ?>"

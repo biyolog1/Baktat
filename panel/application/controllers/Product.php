@@ -69,10 +69,19 @@ class Product extends CI_Controller
             $insert = $this->Product_model->add(
                 array(
                     "title" => $this->input->post("title"),
+                    "titleEn" => $this->input->post("titleEn"),
+                    "titleFr" => $this->input->post("titleFr"),
+                    "titleDe" => $this->input->post("titleDe"),
                     "description" => $this->input->post("description"),
+                    "descriptionEn" => $this->input->post("descriptionEn"),
+                    "descriptionFr" => $this->input->post("descriptionFr"),
+                    "descriptionDe" => $this->input->post("descriptionDe"),
                     "url" => convertToSeo($this->input->post("title")),
                     "barcode" => $this->input->post("barcode"),
                     "content" => $this->input->post("content"),
+                    "contentEn" => $this->input->post("contentEn"),
+                    "contentFr" => $this->input->post("contentFr"),
+                    "contentDe" => $this->input->post("contentDe"),
                     "rank" => 0,
                     "isActive" => 1,
                     "createdAt" => date("Y-m-d H:i:s")
@@ -145,10 +154,19 @@ class Product extends CI_Controller
                 ),
                 array(
                     "title" => $this->input->post("title"),
+                    "titleEn" => $this->input->post("titleEn"),
+                    "titleFr" => $this->input->post("titleFr"),
+                    "titleDe" => $this->input->post("titleDe"),
                     "description" => $this->input->post("description"),
+                    "descriptionEn" => $this->input->post("descriptionEn"),
+                    "descriptionFr" => $this->input->post("descriptionFr"),
+                    "descriptionDe" => $this->input->post("descriptionDe"),
                     "url" => convertToSeo($this->input->post("title")),
                     "barcode" => $this->input->post("barcode"),
-                    "content" => $this->input->post("content")
+                    "content" => $this->input->post("content"),
+                    "contentEn" => $this->input->post("contentEn"),
+                    "contentFr" => $this->input->post("contentFr"),
+                    "contentDe" => $this->input->post("contentDe")
                 )
             );
 

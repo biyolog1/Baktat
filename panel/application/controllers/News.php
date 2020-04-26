@@ -69,6 +69,9 @@ class News extends CI_Controller
 
 
         $this->form_validation->set_rules("title", "Başlık", "required|trim");
+        $this->form_validation->set_rules("titleEn", "İngilizce Başlık", "required|trim");
+        $this->form_validation->set_rules("titleFr", "Fransızca Başlık", "required|trim");
+        $this->form_validation->set_rules("titleDe", "Almanca Başlık", "required|trim");
         $this->form_validation->set_message(
             array(
                 "required" => "<b><i>{field}</i></b> alanı boş olamaz"
@@ -93,7 +96,13 @@ class News extends CI_Controller
                     $uploaded_file = $this->upload->data("file_name");
                     $data = array(
                         "title" => $this->input->post("title"),
+                        "titleEn" => $this->input->post("titleEn"),
+                        "titleFr" => $this->input->post("titleFr"),
+                        "titleDe" => $this->input->post("titleDe"),
                         "description" => $this->input->post("description"),
+                        "descriptionEn" => $this->input->post("descriptionEn"),
+                        "descriptionFr" => $this->input->post("descriptionFr"),
+                        "descriptionDe" => $this->input->post("descriptionDe"),
                         "url" => convertToSeo($this->input->post("title")),
                         "news_type" => $news_type,
                         "img_url" => $uploaded_file,
@@ -106,7 +115,7 @@ class News extends CI_Controller
                 } else {
                     $alert = array(
                         "title" => "BAŞARISIZ !",
-                        "text" => "BGörsel Yüklenirken Problem Oluştu.",
+                        "text" => "Görsel Yüklenirken Problem Oluştu.",
                         "type" => "error",
 
                     );
@@ -120,7 +129,13 @@ class News extends CI_Controller
             } else if ($news_type == "video") {
                 $data = array(
                     "title" => $this->input->post("title"),
+                    "titleEn" => $this->input->post("titleEn"),
+                    "titleFr" => $this->input->post("titleFr"),
+                    "titleDe" => $this->input->post("titleDe"),
                     "description" => $this->input->post("description"),
+                    "descriptionEn" => $this->input->post("descriptionEn"),
+                    "descriptionFr" => $this->input->post("descriptionFr"),
+                    "descriptionDe" => $this->input->post("descriptionDe"),
                     "url" => convertToSeo($this->input->post("title")),
                     "news_type" => $news_type,
                     "img_url" => "#",
@@ -223,7 +238,13 @@ class News extends CI_Controller
                         $uploaded_file = $this->upload->data("file_name");
                         $data = array(
                             "title" => $this->input->post("title"),
+                            "titleEn" => $this->input->post("titleEn"),
+                            "titleFr" => $this->input->post("titleFr"),
+                            "titleDe" => $this->input->post("titleDe"),
                             "description" => $this->input->post("description"),
+                            "descriptionEn" => $this->input->post("descriptionEn"),
+                            "descriptionFr" => $this->input->post("descriptionFr"),
+                            "descriptionDe" => $this->input->post("descriptionDe"),
                             "url" => convertToSeo($this->input->post("title")),
                             "news_type" => $news_type,
                             "img_url" => $uploaded_file,
@@ -246,7 +267,13 @@ class News extends CI_Controller
                 } else {
                     $data = array(
                         "title" => $this->input->post("title"),
+                        "titleEn" => $this->input->post("titleEn"),
+                        "titleFr" => $this->input->post("titleFr"),
+                        "titleDe" => $this->input->post("titleDe"),
                         "description" => $this->input->post("description"),
+                        "descriptionEn" => $this->input->post("descriptionEn"),
+                        "descriptionFr" => $this->input->post("descriptionFr"),
+                        "descriptionDe" => $this->input->post("descriptionDe"),
                         "url" => convertToSeo($this->input->post("title")),
                     );
 
@@ -255,7 +282,13 @@ class News extends CI_Controller
             } else if ($news_type == "video") {
                 $data = array(
                     "title" => $this->input->post("title"),
+                    "titleEn" => $this->input->post("titleEn"),
+                    "titleFr" => $this->input->post("titleFr"),
+                    "titleDe" => $this->input->post("titleDe"),
                     "description" => $this->input->post("description"),
+                    "descriptionEn" => $this->input->post("descriptionEn"),
+                    "descriptionFr" => $this->input->post("descriptionFr"),
+                    "descriptionDe" => $this->input->post("descriptionDe"),
                     "url" => convertToSeo($this->input->post("title")),
                     "news_type" => $news_type,
                     "img_url" => "#",
