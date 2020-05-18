@@ -18,6 +18,30 @@
                             <small class="pull-right input-form-error"> <?php echo form_error("title"); ?></small>
                         <?php } ?>
                     </div><!-- .form-group -->
+                    <div class="form-group">
+                        <label>İngilizce Başlık</label>
+                        <input class="form-control" placeholder="İngilizce Başlık" name="titleEn">
+                        <?php if (isset($form_error)) { ?>
+
+                            <small class="pull-right input-form-error"> <?php echo form_error("titleEn"); ?></small>
+                        <?php } ?>
+                    </div><!-- .form-group -->
+                    <div class="form-group">
+                        <label>Fransızca Başlık</label>
+                        <input class="form-control" placeholder="Fransızca Başlık" name="titleFr">
+                        <?php if (isset($form_error)) { ?>
+
+                            <small class="pull-right input-form-error"> <?php echo form_error("titleFr"); ?></small>
+                        <?php } ?>
+                    </div><!-- .form-group -->
+                    <div class="form-group">
+                        <label>Almanca Başlık</label>
+                        <input class="form-control" placeholder="Almanca Başlık" name="titleDe">
+                        <?php if (isset($form_error)) { ?>
+
+                            <small class="pull-right input-form-error"> <?php echo form_error("titleDe"); ?></small>
+                        <?php } ?>
+                    </div><!-- .form-group -->
 
                     <div class="form-group image_upload_container">
                         <label>Görsel Seçiniz</label>
@@ -27,6 +51,21 @@
                     <div class="form-group">
                         <label>Açıklama</label>
                         <textarea name="description" class="m-0" data-plugin="summernote"
+                                  data-options="{height: 250}"></textarea>
+                    </div><!-- .form-group -->
+                    <div class="form-group">
+                        <label>İngilizce Açıklama</label>
+                        <textarea name="descriptionEn" class="m-0" data-plugin="summernote"
+                                  data-options="{height: 250}"></textarea>
+                    </div><!-- .form-group -->
+                    <div class="form-group">
+                        <label>Fransızca Açıklama</label>
+                        <textarea name="descriptionFr" class="m-0" data-plugin="summernote"
+                                  data-options="{height: 250}"></textarea>
+                    </div><!-- .form-group -->
+                    <div class="form-group">
+                        <label>Almanca Açıklama</label>
+                        <textarea name="descriptionDe" class="m-0" data-plugin="summernote"
                                   data-options="{height: 250}"></textarea>
                     </div><!-- .form-group -->
 
